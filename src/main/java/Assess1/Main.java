@@ -7,10 +7,10 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         //Create an Array of scores
-        double[] scores = {45.0, 55.0, 65.0};
+        Double[] scores = {45.0, 55.0, 65.0};
 
         //Create a student Object
-        Student stud1 = new Student("Mike", "Jones");
+        Student stud1 = new Student("Mike", "Jones", scores);
 
         //Print the student Object
         System.out.println(stud1.toString());

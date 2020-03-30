@@ -12,9 +12,10 @@ public class Student {
     //Default Constructor
     public Student(){}
     // Constructor
-    public Student(String firstName,String lastName){
+    public Student(String firstName,String lastName, Double[] scores){
         this.firstName = firstName;
         this.lastName = lastName;
+        this.scores = scores;
     }
 
     // Getter and Setter Methods
@@ -52,7 +53,7 @@ public class Student {
 //        return firstName + "\'s score are " + (Arrays.toString(scores));
 //    }
     // Method to calculate total scores
-    public String getTotalScores(double [] scores){
+    public String getTotalScores(Double [] scores){
         int sum = 0;
         for(int i = 0; i < scores.length; i++){
             sum += scores[i];
@@ -61,7 +62,7 @@ public class Student {
     }
 
     // Method to calculate average
-    public String calculateAverageGrade(double [] scores){
+    public String calculateAverageGrade(Double [] scores){
         int sum = 0;
         int avg;
         for(int i = 0; i < scores.length; i++){
